@@ -1,15 +1,11 @@
 def prime?(num)
-  num_array = (2..num).to_a
+  output = true
+  num_array = (2..num-1).to_a
 
   for i in num_array
-    for j in num_array[(i+1..-1)]
-      if j % i == 0
-        num_array.delete(j)
-        
-      end
+    if num % i == 0
+      output = false
     end
   end
-  num_array
+  output
 end
-
-prime?(7)
