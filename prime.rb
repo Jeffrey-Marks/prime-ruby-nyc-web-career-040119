@@ -9,8 +9,8 @@ def prime?(num)
         num_array.delete(j)
         
       end
-      binding.pry
     end
+    binding.pry
   end
   num_array
 end
