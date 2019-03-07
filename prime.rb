@@ -7,8 +7,9 @@ def prime?(num)
     for j in num_array[(i+1..-1)]
       if j % i == 0
         num_array.delete(j)
-        binding.pry
+        
       end
+      binding.pry
     end
   end
   num_array
