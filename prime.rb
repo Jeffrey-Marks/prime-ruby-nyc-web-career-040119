@@ -1,6 +1,11 @@
 def prime?(num)
   output = true
-  num_array = (2..num-1).to_a
+  if num > 0
+    num_array = (2..num-1).to_a
+  else
+    num_array = []
+    output = false
+  end
 
   for i in num_array
     if num % i == 0
@@ -9,3 +14,5 @@ def prime?(num)
   end
   output
 end
+
+prime?(197)
