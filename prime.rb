@@ -1,3 +1,17 @@
+require 'pry'
+
 def prime?(num)
-  num_array = (1..num).to_a
+  num_array = (2..num).to_a
+
+  for i in num_array
+    for j in num_array[(i+1..-1)]
+      if j % i == 0
+        num_array.delete(j)
+        binding.pry
+      end
+    end
+  end
+  num_array
 end
+
+prime?(7)
