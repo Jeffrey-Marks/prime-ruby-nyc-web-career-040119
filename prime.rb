@@ -1,5 +1,3 @@
-require 'pry'
-
 def prime?(num)
   num_array = (2..num).to_a
 
@@ -10,7 +8,6 @@ def prime?(num)
         
       end
     end
-    binding.pry
   end
   num_array
 end
